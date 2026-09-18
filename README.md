@@ -1,6 +1,6 @@
-[![DOI](https://shields.io)](https://doi.org)
-
 # GEO2R Expression Analysis: GSE130404 & GSE12211
+
+[![DOI](https://shields.io)](https://doi.org)
 
 This repository contains the R programming workflows, scripts, and processed transcriptomic datasets used to perform differential gene expression analysis using the limma package across two GEO datasets.
 
