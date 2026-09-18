@@ -1,6 +1,7 @@
 
 
-[![DOI](https://zenodo.org/badge/1375292738.svg)](https://doi.org/10.5281/zenodo.22822887)### GEO2R Expression Analysis: GSE130404 & GSE12211
+[![DOI](https://zenodo.org/badge/1375292738.svg)](https://doi.org/10.5281/zenodo.22822887)
+# GEO2R Expression Analysis: GSE130404 & GSE12211
 
 This repository contains the R programming workflows, scripts, and processed transcriptomic datasets used to perform differential gene expression analysis using the limma package. The analysis includes covariate adjustments and sensitivity testing across two Gene Expression Omnibus (GEO) datasets. 
 
