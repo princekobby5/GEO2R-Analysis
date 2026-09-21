@@ -73,9 +73,9 @@ targets <- c("PPP2R5A", "PPP2R5B", "PPP2R5C", "PPP2R5D", "PPP2R5E",
 # map is available (e.g. from the GENCODE GTF used originally), merge it here.
 # As a minimal fallback, PPP2R5A's Ensembl ID is provided directly so the
 # primary gene of interest can always be checked even without the GTF:
-ppp2r5a_id <- rownames(res_ir2_excl_df)[grepl("^ENSG00000162409", rownames(res_ir2_excl_df))]
+ppp2r5a_id <- rownames(res_ir2_excl_df)[grepl("^ENSG00000066027", rownames(res_ir2_excl_df))]
 if (length(ppp2r5a_id) == 1) {
-  cat("PPP2R5A (ENSG00000162409), IR2 vs WT, SRR10507806 excluded:\n")
+  cat("PPP2R5A (ENSG00000066027), IR2 vs WT, SRR10507806 excluded:\n")
   print(res_ir2_excl_df[ppp2r5a_id, c("baseMean", "log2FoldChange", "lfcSE", "pvalue", "padj")])
 } else {
   cat("PPP2R5A Ensembl ID not found by exact match after filtering; check gene_id column directly.\n")
