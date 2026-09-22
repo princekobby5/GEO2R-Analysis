@@ -1,5 +1,6 @@
 # PP2A B56 transcriptomic analysis workflows
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22822888.svg)](https://doi.org/10.5281/zenodo.22822888)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22822887.svg)](https://doi.org/10.5281/zenodo.22822887)
+
 This repository contains analysis code and input/output tables for GSE12211, GSE120932, GSE130404, and GSE140771. For GSE120932 it includes the complete public, preprocessed 12-array [series matrix](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE120nnn/GSE120932/matrix/GSE120932_series_matrix.txt.gz), a six-array scripted limma model, array quality checks, and probe-count-only and expression/variance-matched exploratory gene benchmarks.
 
 ### Project Structure & Datasets
