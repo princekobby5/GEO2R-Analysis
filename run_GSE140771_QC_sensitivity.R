@@ -8,6 +8,9 @@ suppressPackageStartupMessages(library(DESeq2))
 #   2. A sensitivity analysis rerunning the IR2 versus WT contrast with
 #      SRR10507806 (IR2_2), the library with weaker alignment and mapping
 #      QC metrics, excluded.
+#      This leaves one IR2 library and two WT libraries. The resulting
+#      fitted SE and adjusted P value are descriptive model outputs,
+#      not evidence of biological replication in IR2 after exclusion.
 #
 # Usage:
 #   Rscript run_GSE140771_QC_sensitivity.R featureCounts_filtered_count_matrix.csv output_dir
@@ -53,6 +56,10 @@ cat("\nCompare against the existing blind=FALSE coordinates in\n",
 
 # --- 2. SRR10507806 (IR2_2) exclusion sensitivity ---------------------------
 counts_excl <- counts[, colnames(counts) != "IR2_2"]
+stopifnot(identical(colnames(counts_excl), c("WT_1", "WT_2", "IR1_1", "IR1_2", "IR2_1")))
+cat("IR2_2 excluded: one IR2 library remains. Interpret the IR2-vs-WT ",
+    "fold change as a sensitivity check; the fitted P value and SE ",
+    "do not establish biological replication within IR2.\n")
 coldata_excl <- data.frame(
   row.names = colnames(counts_excl),
   group = factor(c("WT", "WT", "IR1", "IR1", "IR2"), levels = c("WT", "IR1", "IR2"))

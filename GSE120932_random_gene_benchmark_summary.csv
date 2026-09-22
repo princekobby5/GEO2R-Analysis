@@ -1,0 +1,10 @@
+metric,value
+B56 qualifying genes,3.0
+B56 panel size,5.0
+matched random draws,100000.0
+empirical P value,0.022119778802211977
+exact matched probability,0.022582519634994566
+one probe eligible genes,13795.0
+one probe qualifying genes,2811.0
+three probe eligible genes,1766.0
+three probe qualifying genes,115.0
